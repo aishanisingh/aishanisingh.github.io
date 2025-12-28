@@ -80,21 +80,29 @@ function initExperienceTabs() {
 
 // Mobile menu toggle
 function initMobileMenu() {
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.querySelector('.nav-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
 
-    if (menuToggle && navLinks) {
+    if (menuToggle && mobileMenu) {
         menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
             menuToggle.classList.toggle('active');
         });
 
         // Close menu when clicking a link
-        navLinks.querySelectorAll('a').forEach(link => {
+        mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
                 menuToggle.classList.remove('active');
             });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
         });
     }
 }
