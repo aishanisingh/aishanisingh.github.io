@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aishani's website</title>
+    <meta name="description" content="Computer science researcher exploring machine learning, algorithms, and computational theory. Collaborating with leading universities on cutting-edge research.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=38">
+</head>
+<body>
+    <!-- Background effects -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">AS</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#research">Research</a>
+                <a href="#misc">Misc.</a>
+                <a href="#contact">Contact</a>
+                <a href="https://drive.google.com/file/d/1Is0rWfqEEMrPUjEoywE31sq6lqZ0RlqE/view?usp=sharing" class="nav-resume">CV</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#misc">Misc</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="nav-resume">CV</a>
+    </div>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Aishani Singh!</h1>
+                <h2 class="hero-tagline">I explore the applications of computer science on complex problems.</h2>
+                <p class="hero-description">
+                    I'm a current first-year student at Carnegie Mellon University's School of Computer Science with a passion for tackling complex problems
+                    in machine learning, algorithms, and computational theory.
+                </p>
+                <div class="hero-cta">
+                    <a href="#research" class="btn btn-primary">View My Research</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2 class="section-heading"><span class="section-number">01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm Aishani, a computer science researcher driven by curiosity about
+                        how computational methods can solve real-world problems. My journey in CS
+                        began with high school science fairs and has evolved into a deep interest
+                        in machine learning, theoretical computer science, and their applications.
+                    </p>
+                    <p>
+                        I've had the privilege of working with research groups at universities,
+                        where I've contributed to projects spanning natural language processing,
+                        computer vision, and algorithmic optimization.
+                    </p>
+                    <p>
+                        My research interests lie at the intersection of theory and application.
+                        I'm particularly excited about developing aplications that are not only
+                        theoretically sound but also practically applicable to pressing challenges
+                        in accessibility, fairness, and efficiency.
+                    </p>
+                    <p>Areas of focus:</p>
+                    <ul class="tech-list">
+                        <li>Machine Learning</li>
+                        <li>Algorithm Design</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computational Theory</li>
+                        <li>Computer Vision</li>
+                        <li>AI Accessibility</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/profile-photo.jpg" alt="Aishani Singh" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <h2 class="section-heading"><span class="section-number">02.</span> Research Experience</h2>
+            <div class="experience-container">
+                <div class="experience-tabs">
+                    <button class="tab-btn active" data-tab="0">University Lab</button>
+                    <button class="tab-btn" data-tab="1">Research Group</button>
+                    <button class="tab-btn" data-tab="2">University Lab</button>
+                    <button class="tab-btn" data-tab="3">Independent</button>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-panel active" data-panel="0">
+                        <h3 class="experience-title">Undergraduate Researcher <span class="experience-company">@ Georgia Tech </span></h3>
+                        <p class="experience-date">Jan 2024 - June 2024</p>
+                        <ul class="experience-list">
+                            <li>Researched data distillation methods for NeRF-based 3D reconstruction to reduce dataset size without degrading reconstruction quality with Prof. Celine Lin</li>
+                            <li>Designed and evaluated novel distillation pipelines using PyTorch on large-scale 3D imaging datasets</li>
+                            <li>Analyzed reconstruction fidelity, training efficiency, and generalization across distilled datasets</li>
+                            <li>Published first-author paper at ISCA 2024</li>
+                        </ul>
+                    </div>
+                    <div class="experience-panel" data-panel="1">
+                        <h3 class="experience-title">Research Assistant <span class="experience-company">@ Harvard</span></h3>
+                        <p class="experience-date">Jun 2024 – Aug 2024</p>
+                        <ul class="experience-list">
+                            <li>Evaluated datasets generated by AI models for hardware design workflows</li>
+                            <li>Developed quantitative tools to measure hardware-relevant metrics and dataset quality</li>
+                            <li>Collaborated with PhD researchers to assess generalization and robustness of generative design data</li>
+                            <li>Conducted research under the guidance of Prof. Vijay Reddi</li>
+                        </ul>
+                    </div>
+                    <div class="experience-panel" data-panel="2">
+                        <h3 class="experience-title">Undergraduate Researcher <span class="experience-company">@ UC Berkeley</span></h3>
+                        <p class="experience-date">Aug 2022 – Dec 2023</p>
+                        <ul class="experience-list">
+                            <li>Co-authored research on long-form video understanding and generation challenges in large-scale vision models</li>
+                            <li>Built and curated datasets for latent diffusion model unlearning to support artist copyright protection</li>
+                            <li>Developed evaluation benchmarks and analysis tools for diffusion model unlearning effectiveness</li>
+                            <li>Co-organized the Long-form Video Understanding & Generation Competition at CVPR 2023 under Prof. Kurt Keutzer</li>
+                        </ul>
+                    </div>
+                    <div class="experience-panel" data-panel="3">
+                        <h3 class="experience-title">Independent Research</h3>
+                        <p class="experience-date">Ongoing</p>
+                        <ul class="experience-list">
+                            <li><b>EcoGraph:</b> Designed a Transformer-based graph neural network to discover novel chemical catalysts for energy storage</li>
+                            <li><b>LiveConv:</b> Built a real-time multilingual speech-to-text translation pipeline for AR glasses</li>
+                            <li><b>Netra:</b> Developed an AI-powered smart-glasses system for visually impaired navigation</li>
+                            <li>Qualified for California Science and Engineering Fair, won "Most Promising Young Scientist" and "Most Innovative Solution" </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section class="section" id="research">
+            <h2 class="section-heading"><span class="section-number">03.</span> Research</h2>
+
+            <!-- Featured Research -->
+            <div class="featured-projects">
+                <article class="featured-project">
+                    <div class="project-body">
+                        <div class="project-header">
+                            <p class="project-overline">Featured Research</p>
+                            <h3 class="project-title">3D Dataset Distillation: Condensing 3D Datasets for Enhanced Data Efficiency in 3D Reconstruction</h3>
+                        </div>
+                        <div class="project-description">
+                            <p>I conducted research on 3D dataset distillation for efficient 3D reconstruction, addressing the geometric redundancy and scalability limits of Neural Radiance Fields (NeRFs). I developed NeRD, a principled system that keeps the NeRF model fixed while iteratively pruning redundant views using 3D projection validity and depth-consistency constraints to preserve independent spatial information. Our experiments show near-full reconstruction quality using as little as 40% of the original data, demonstrating that viewpoint diversity matters more than dataset size. This work was conducted at Georgia Tech's Efficient and Intelligent Computing Lab under Prof. Yingyan (Celine) Li, with collaborators Jason Zhang, Renyun Li, and Yonggan Fu.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/nerd-research.png" alt="NeRD research visualization showing 3D projection validity and depth consistency" class="project-img">
+                        </div>
+                        <div class="project-meta">
+                            <ul class="project-tech">
+                                <li>Computer Vision & Graphics</li>
+                                <li>Machine Learning Systems</li>
+                                <li>Algorithms</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1xyntLiMeD4FvfzRAH5PK_DmwQXaA153W/view" target="_blank" aria-label="Paper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </a>
+                                <a href="https://drive.google.com/file/d/1LBreonXB94B0-XxQSqHz8DOgBWGdD7wZ/view?usp=sharing" target="_blank" aria-label="Video">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="featured-project">
+                    <div class="project-body">
+                        <div class="project-header">
+                            <p class="project-overline">Featured Research</p>
+                            <h3 class="project-title">Netra: Utilizing AI on Smart Glasses to Help Visually Challenged People Navigate the World Safely</h3>
+                        </div>
+                        <div class="project-description">
+                            <p>I developed Netra, an assistive AI system that enables visually impaired users to navigate their surroundings by converting real-time camera input from smart glasses into spoken descriptions. The system uses a cascaded architecture, combining an image-captioning model (InceptionV3 with attention) and a text-to-speech model (WaveNet-based), prioritizing modularity, latency, and deployability on resource-constrained hardware. Experiments demonstrate reliable real-time performance with strong captioning and speech quality, highlighting both the feasibility and scalability of wearable AI systems. This work lays the foundation for future optimization through model compression and edge deployment.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="images/netra-research.png" alt="Netra system architecture" class="project-img">
+                        </div>
+                        <div class="project-meta">
+                            <ul class="project-tech">
+                                <li>Computer Vision</li>
+                                <li>Machine Learning Systems</li>
+                                <li>Multimodal Learning</li>
+                                <li>Human-Centered & Assistive Computing</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://www.canva.com/design/DAE4rzgqLIE/HdAScc4ohRFn1mUfb5cZXA/edit?utm_content=DAE4rzgqLIE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" aria-label="Paper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Other Research -->
+            <h3 class="other-projects-title">Other Research & Projects</h3>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://arxiv.org/pdf/2403.12052" aria-label="Paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></a>
+                        </div>
+                    </div>
+                    <h4 class="project-card-title">Model Unlearning</h4>
+                    <p class="project-card-desc">Co-developed the first large-scale dataset, benchmark, and evaluation metric for studying copyright infringement and machine unlearning in text-to-image diffusion models.</p>
+                    <ul class="project-card-tech">
+                        <li>Generative Models</li>
+                        <li>Evaluation Metrics</li>
+                        <li>Responsible ML</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://www.canva.com/design/DAFcTdyuwxc/offnskHkWmlww5xg7lPkwA/edit?utm_content=DAFcTdyuwxc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" aria-label="Paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></a>
+                        </div>
+                    </div>
+                    <h4 class="project-card-title">LiveConv</h4>
+                    <p class="project-card-desc">A fully on-device, real-time speech-to-speech translation system using cascaded ASR and attention-based translation models on AR glasses.</p>
+                    <ul class="project-card-tech">
+                        <li>Natural Language Processing</li>
+                        <li>Edge AI</li>
+                        <li>Real-Time Systems</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card-top">
+                        <div class="folder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://www.canva.com/design/DAF-zU9ArU0/w2mO6VrlYh7XUhlbaYlcaQ/edit?utm_content=DAF-zU9ArU0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" aria-label="Paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></a>
+                        </div>
+                    </div>
+                    <h4 class="project-card-title">EcoGraph</h4>
+                    <p class="project-card-desc">A transformer-based graph neural network that encodes atomic, distance, and edge features to efficiently predict catalyst–adsorbate energies.</p>
+                    <ul class="project-card-tech">
+                        <li>Scientific Computing</li>
+                        <li>Algorithms</li>
+                        <li>Computational Modeling</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Miscellaneous Section -->
+        <section class="section" id="misc">
+            <h2 class="section-heading"><span class="section-number">04.</span> Beyond the Lab</h2>
+            <div class="misc-intro">
+                <p>When I'm not immersed in research, I enjoy exploring creative pursuits and staying connected to the world outside of computer science. Here are some of the things that I'm interested in!</p>
+            </div>
+            <div class="misc-container">
+                <div class="misc-card">
+                    <div class="misc-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    </div>
+                    <h3 class="misc-title">Creative Pursuits</h3>
+                    <ul class="misc-desc">
+                        <li>Theatre performer and stage manager</li>
+                        <li><a href="https://harkeraquila.com/staff_name/aishani-singh/">Writer and editor for student journalism</a> for my high school's newspaper, The Harker Aquila</li>
+                        <li>Interested in using storytelling and design to make complex technical ideas more accessible</li>
+                    </ul>
+                </div>
+                <div class="misc-card">
+                    <div class="misc-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    </div>
+                    <h3 class="misc-title">Reading & Learning</h3>
+                    <ul class="misc-desc">
+                        <li>Avid reader of political theory, ethics of technology, and contemporary history</li>
+                        <li>Particularly interested in the intersection of computer science, public policy, and law, especially around AI governance, accessibility, and digital rights</li>
+                    </ul>
+                </div>
+                <div class="misc-card">
+                    <div class="misc-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="misc-title">Community & Involvement</h3>
+                    <ul class="misc-desc">
+                        <li>Active in AI, research, and theater communities</li>
+                        <li>Previously interned with the California State Senate, where I engaged with the legislative process and <a href="https://drive.google.com/file/d/1LprV8eKekz97ZgC1qSrQOvzYlJJDVHuU/view?usp=sharing">worked</a> on policy issues related to accessibility and inclusive housing</li>
+                        <li>Committed to building technology that meaningfully serves underrepresented communities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section section-contact" id="contact">
+            <h2 class="section-heading"><span class="section-number">05.</span> What's Next?</h2>
+            <h3 class="contact-title">Let's Connect</h3>
+            <p class="contact-description">
+                I'm always interested in discussing research opportunities, collaborations, or simply
+                connecting with others in the field. Don't hesitate to reach out!
+            </p>
+            <a href="aishanis@andrew.cmu.edu" class="btn btn-primary btn-large">Get In Touch</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="https://github.com/aishanisingh" target="_blank" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/aishani-singh-416336219/" target="_blank" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://scholar.google.com/citations?hl=en&user=r7VLLYsAAAAJ" target="_blank" aria-label="Google Scholar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path d="M12 14v7"></path></svg>
+            </a>
+            <a href="aishanis@andrew.cmu.edu" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+        </div>
+        <p class="footer-credit">built by aishani singh</p>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
