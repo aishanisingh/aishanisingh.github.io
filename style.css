@@ -306,7 +306,7 @@ a:hover {
 }
 
 .hero-description {
-    max-width: 540px;
+    max-width: 720px;
     font-size: 1.1rem;
     font-weight: 400;
     color: var(--text-secondary);
@@ -530,6 +530,7 @@ a:hover {
 
 .experience-content {
     flex: 1;
+    max-width: 720px;
 }
 
 .experience-panel {
@@ -745,7 +746,7 @@ a:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
 
@@ -1096,6 +1097,10 @@ a:hover {
 
     .section-heading::after {
         max-width: 150px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
