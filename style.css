@@ -435,6 +435,7 @@ a:hover {
 .about-image {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .image-wrapper {
