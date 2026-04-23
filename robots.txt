@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aishanisingh.github.io/sitemap.xml
