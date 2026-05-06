@@ -17,7 +17,7 @@
     --accent-sage: #c5d4c0;
     --border: rgba(45, 42, 38, 0.1);
     --nav-height: 70px;
-    --section-padding: 70px;
+    --section-padding: 20px;
 }
 
 * {
@@ -747,7 +747,7 @@ a:hover {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 

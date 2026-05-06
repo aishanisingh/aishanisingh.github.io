@@ -102,7 +102,7 @@
                 <h1 class="hero-name">Aishani Singh!</h1>
                 <h2 class="hero-tagline">I research and build machine learning systems for the real world.</h2>
                 <p class="hero-description">
-                    CS undergrad at Carnegie Mellon, researching vision-language models and probabilistic modeling at the Robotics Institute's AUTON Lab. First-author publication at ISCA 2024, with prior research at Georgia Tech, Harvard, and UC Berkeley. Currently building <strong>Civys</strong>, an AI platform that turns legislation into audit-ready briefs for compliance teams, and serving as a founding engineer in Pear VC's inaugural Prime cohort.
+                    I'm a CS undergrad at Carnegie Mellon doing research on vision-language models at the AUTON Lab, with a first paper published at ISCA 2024. On the side, I'm building <strong>Civys</strong>, an AI tool that helps compliance teams make sense of legislation, and recently joined Pear VC's first Prime cohort as a founding engineer.
                 </p>
                 <div class="hero-cta">
                     <a href="#research" class="btn btn-primary">View My Research</a>
@@ -125,18 +125,11 @@
                         vision-language models and systems that reliably serve real users.
                     </p>
                     <p>
-                        My path into CS began with high school science fair projects like an
-                        AI-powered smart-glasses system for visually impaired users and a real-time
-                        translation pipeline for wearables. Since then, I've worked with research
-                        groups at Georgia Tech, Harvard, and UC Berkeley on problems spanning
-                        3D reconstruction, diffusion-model unlearning, and generative AI for
-                        hardware design, and published a first-author paper at ISCA 2024.
-                    </p>
-                    <p>
-                        Outside the lab, I'm building <strong>Civys</strong>, my early-stage
-                        startup, through CMU's Swartz Center for Entrepreneurship and the UEA.x
-                        builder community, and recently joined Pear VC's inaugural Prime cohort
-                        as a founding engineer. I'm drawn to the interplay between rigorous
+                        I started building AI in high school and have since contributed to
+                        research at Georgia Tech (first-author at ISCA 2024), Harvard, and UC
+                        Berkeley. Outside the lab, I'm building <strong>Civys</strong>, my
+                        early-stage startup, and serving as a founding engineer in Pear VC's
+                        inaugural Prime cohort. I'm drawn to the interplay between rigorous
                         research and shipping real products — in my experience, each sharpens
                         the other.
                     </p>
@@ -170,7 +163,6 @@
                     <button class="tab-btn" data-tab="1">Georgia Tech</button>
                     <button class="tab-btn" data-tab="2">Harvard</button>
                     <button class="tab-btn" data-tab="3">Berkeley</button>
-                    <button class="tab-btn" data-tab="4">Independent</button>
                 </div>
                 <div class="experience-content">
                     <div class="experience-panel active" data-panel="0">
@@ -186,7 +178,7 @@
                         <h3 class="experience-title">Undergraduate Researcher <span class="experience-company">@ Georgia Tech </span></h3>
                         <p class="experience-date">Jan 2024 - June 2024</p>
                         <ul class="experience-list">
-                            <li>Researched data distillation methods for NeRF-based 3D reconstruction to reduce dataset size without degrading reconstruction quality with Prof. Yingyan (Celine) Li</li>
+                            <li>Researched data distillation methods for NeRF-based 3D reconstruction with Prof. Yingyan (Celine) Li, achieving near-full reconstruction quality using as little as 40% of the original training data</li>
                             <li>Designed and evaluated novel distillation pipelines using PyTorch on large-scale 3D imaging datasets</li>
                             <li>Analyzed reconstruction fidelity, training efficiency, and generalization across distilled datasets</li>
                             <li>Published first-author paper at ISCA 2024</li>
@@ -207,19 +199,9 @@
                         <p class="experience-date">Aug 2022 – Dec 2023</p>
                         <ul class="experience-list">
                             <li>Co-authored research on long-form video understanding and generation challenges in large-scale vision models</li>
-                            <li>Built and curated datasets for latent diffusion model unlearning to support artist copyright protection</li>
-                            <li>Developed evaluation benchmarks and analysis tools for diffusion model unlearning effectiveness</li>
+                            <li>Built and curated <b>CPDM</b>, a 21,000-image benchmark across 4 copyright categories (style, portrait, artistic creation, licensed illustration) for studying diffusion-model unlearning</li>
+                            <li>Designed evaluation tooling and benchmarked 4 unlearning approaches (gradient ascent, weight pruning, ESD, Forget-Me-Not) on style leakage, FID, and a copyright similarity metric</li>
                             <li>Co-organized the Long-form Video Understanding & Generation Competition at CVPR 2023 under Prof. Kurt Keutzer</li>
-                        </ul>
-                    </div>
-                    <div class="experience-panel" data-panel="4">
-                        <h3 class="experience-title">Independent Research</h3>
-                        <p class="experience-date">2021 – 2023</p>
-                        <ul class="experience-list">
-                            <li><b>EcoGraph:</b> Designed a Transformer-based graph neural network to discover novel chemical catalysts for energy storage</li>
-                            <li><b>LiveConv:</b> Built a real-time multilingual speech-to-text translation pipeline for AR glasses</li>
-                            <li><b>Netra:</b> Developed an AI-powered smart-glasses system for visually impaired navigation</li>
-                            <li>Qualified for California Science and Engineering Fair, won "Most Promising Young Scientist" and "Most Innovative Solution" </li>
                         </ul>
                     </div>
                 </div>
@@ -277,7 +259,7 @@
                         </div>
                     </div>
                     <h4 class="project-card-title">Model Unlearning</h4>
-                    <p class="project-card-desc">Co-developed the first large-scale dataset, benchmark, and evaluation metric for studying copyright infringement and machine unlearning in text-to-image diffusion models.</p>
+                    <p class="project-card-desc">Co-developed CPDM, a 21,000-image dataset, benchmark, and evaluation metric for studying copyright infringement and machine unlearning in text-to-image diffusion models.</p>
                     <ul class="project-card-tech">
                         <li>Generative Models</li>
                         <li>Evaluation Metrics</li>
@@ -306,24 +288,6 @@
                 <article class="project-card">
                     <div class="project-card-top">
                         <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                        </div>
-                        <div class="project-card-links">
-                            <a href="https://www.canva.com/design/DAF-zU9ArU0/w2mO6VrlYh7XUhlbaYlcaQ/edit?utm_content=DAF-zU9ArU0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" aria-label="Paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></a>
-                        </div>
-                    </div>
-                    <h4 class="project-card-title">EcoGraph</h4>
-                    <p class="project-card-desc">A transformer-based graph neural network that encodes atomic, distance, and edge features to efficiently predict catalyst-adsorbate energies.</p>
-                    <ul class="project-card-tech">
-                        <li>Scientific Computing</li>
-                        <li>Algorithms</li>
-                        <li>Computational Modeling</li>
-                    </ul>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-card-top">
-                        <div class="folder-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                         </div>
                         <div class="project-card-links">
@@ -345,48 +309,13 @@
         <section class="section" id="ventures">
             <h2 class="section-heading"><span class="section-number">04.</span> Entrepreneurship</h2>
             <div class="misc-intro">
-                <p>Alongside research, I'm building <a href="https://civys.vercel.app" target="_blank"><strong>Civys</strong></a>, an AI platform that turns complex legislation and policy text into audit-ready briefs for compliance teams, city attorneys, and local government staff. I'm developing it through CMU's entrepreneurship programs, and separately serving as a founding engineer in Pear VC's inaugural Prime cohort. <a href="https://civys.vercel.app" target="_blank">View the live demo →</a></p>
-            </div>
-            <div class="misc-container">
-                <div class="misc-card">
-                    <div class="misc-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                    </div>
-                    <h3 class="misc-title">Pear Prime</h3>
-                    <ul class="misc-desc">
-                        <li>Selected as a Prime Engineer (8 of 500+) in the inaugural cohort, a program identifying top engineers for early-stage Pear VC startups</li>
-                        <li>Evaluating startup opportunities and matching with portfolio companies based on technical fit, experience, and product direction</li>
-                    </ul>
-                </div>
-                <div class="misc-card">
-                    <div class="misc-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-                    </div>
-                    <h3 class="misc-title">UEA.x Fellow</h3>
-                    <ul class="misc-desc">
-                        <li>Part of CMU's Undergraduate Entrepreneurship Association's selective builder community for students working on early-stage startups and emerging technologies</li>
-                        <li>Receiving mentorship from YC, Pear, and 8VC partners while rapidly prototyping Civys</li>
-                    </ul>
-                </div>
-                <div class="misc-card">
-                    <div class="misc-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 21V12h6v9"></path></svg>
-                    </div>
-                    <h3 class="misc-title">Swartz Center Founder</h3>
-                    <ul class="misc-desc">
-                        <li>Selected for CMU's competitive Swartz Center for Entrepreneurship incubator for Civys, gaining access to mentorship, founder resources, and early-stage validation support</li>
-                        <li>Conducting ongoing user discovery with compliance stakeholders to validate and sharpen Civys' product direction</li>
-                    </ul>
-                </div>
+                <p>Alongside research, I'm building <a href="https://civys.vercel.app" target="_blank"><strong>Civys</strong></a>, an AI platform that turns complex legislation and policy text into audit-ready briefs for compliance teams, city attorneys, and local government staff. It's incubated through CMU's Swartz Center for Entrepreneurship and the UEA.x builder community, with mentorship from YC, Pear, and 8VC partners. Separately, I'm a founding engineer in Pear VC's inaugural Prime cohort (8 of 500+). <a href="https://civys.vercel.app" target="_blank">View the live demo →</a></p>
             </div>
         </section>
 
         <!-- Miscellaneous Section -->
         <section class="section" id="misc">
             <h2 class="section-heading"><span class="section-number">05.</span> Beyond the Lab</h2>
-            <div class="misc-intro">
-                <p>When I'm not immersed in research, I enjoy exploring creative pursuits and staying connected to the world outside of computer science. Here are some of the things that I'm interested in!</p>
-            </div>
             <div class="misc-container">
                 <div class="misc-card">
                     <div class="misc-icon">
@@ -394,9 +323,7 @@
                     </div>
                     <h3 class="misc-title">Creative Pursuits</h3>
                     <ul class="misc-desc">
-                        <li>Theatre performer and stage manager</li>
-                        <li><a href="https://harkeraquila.com/staff_name/aishani-singh/" target="_blank">Writer and editor for student journalism</a> for my high school's newspaper, The Harker Aquila</li>
-                        <li>Works recognized by Alliance for Young Artists & Writers, received Honorable Mention for plays and journalistic articles</li>
+                        <li>Theatre performer and stage manager, and former writer/editor for <a href="https://harkeraquila.com/staff_name/aishani-singh/" target="_blank">The Harker Aquila</a>; work in plays and journalism received Honorable Mention from the Alliance for Young Artists & Writers.</li>
                     </ul>
                 </div>
                 <div class="misc-card">
@@ -405,8 +332,7 @@
                     </div>
                     <h3 class="misc-title">Reading & Learning</h3>
                     <ul class="misc-desc">
-                        <li>Interested in reading political theory, ethics of technology, and contemporary history</li>
-                        <li>Curious about the intersection of computer science, public policy, and law, especially around AI governance, accessibility, and digital rights</li>
+                        <li>Currently reading political theory, technology ethics, and contemporary history; especially interested in AI governance, accessibility, and digital rights.</li>
                     </ul>
                 </div>
                 <div class="misc-card">
@@ -415,8 +341,7 @@
                     </div>
                     <h3 class="misc-title">Community & Involvement</h3>
                     <ul class="misc-desc">
-                        <li>Previously interned with the California State Senate, where I engaged with the legislative process and <a href="https://drive.google.com/file/d/1LprV8eKekz97ZgC1qSrQOvzYlJJDVHuU/view?usp=sharing" target="_blank">worked</a> on policy issues related to accessibility and inclusive housing</li>
-                        <li>Committed to building technology that meaningfully serves underrepresented communities</li>
+                        <li>Previously interned with the California State Senate on accessibility and inclusive housing policy (<a href="https://drive.google.com/file/d/1LprV8eKekz97ZgC1qSrQOvzYlJJDVHuU/view?usp=sharing" target="_blank">sample work</a>); committed to building technology that meaningfully serves underrepresented communities.</li>
                     </ul>
                 </div>
             </div>
