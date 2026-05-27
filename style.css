@@ -169,7 +169,7 @@ body::before {
 /* ============================================
    SHARED — section scaffold
    ============================================ */
-main, .ventures, .contact, .footer {
+main, .contact, .footer {
     max-width: 100%;
 }
 .section,
@@ -276,12 +276,6 @@ main, .ventures, .contact, .footer {
     max-width: 820px;
     margin-bottom: 36px;
 }
-.hero-statement a.hero-civys {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-    font-style: italic;
-}
-.hero-statement a.hero-civys:hover { color: var(--ink); border-bottom-color: var(--ink); }
 .hero-bio {
     font-family: var(--sans);
     font-size: 15.5px;
@@ -291,51 +285,6 @@ main, .ventures, .contact, .footer {
     margin-bottom: 56px;
 }
 .hero-bio strong { color: var(--ink); font-weight: 600; }
-
-/* Credential strip */
-.credentials {
-    border-top: 1px solid var(--rule);
-    padding-top: 28px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
-}
-.cred {
-    border-left: 1px solid var(--rule);
-    padding-left: 18px;
-}
-.cred dt {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-4);
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-}
-.cred-icon {
-    width: 13px;
-    height: 13px;
-    color: var(--accent);
-    flex-shrink: 0;
-}
-.cred-val {
-    font-family: var(--serif);
-    font-size: 17px;
-    line-height: 1.25;
-    color: var(--ink);
-    font-weight: 400;
-    margin-bottom: 4px;
-}
-.cred-val em { font-style: italic; color: var(--accent); }
-.cred-sub {
-    font-family: var(--sans);
-    font-size: 12.5px;
-    color: var(--ink-4);
-    line-height: 1.4;
-}
 
 /* ============================================
    ABOUT
@@ -760,69 +709,6 @@ main, .ventures, .contact, .footer {
 .work-row:hover .work-arrow { transform: translateX(6px); }
 
 /* ============================================
-   VENTURES (dark band)
-   ============================================ */
-.ventures {
-    background: var(--ink);
-    color: var(--paper);
-    padding: var(--section-y) 0;
-    border-bottom: 1px solid var(--ink);
-}
-.ventures .section-head {
-    max-width: var(--max-w);
-    margin: 0 auto 40px;
-    padding: 0 var(--gutter);
-}
-.ventures .section-num { color: rgba(243, 239, 230, 0.5); }
-.ventures .section-num span { color: var(--accent-warm); }
-.ventures .section-title { color: var(--paper); }
-.ventures .section-title em { color: var(--accent-warm); }
-
-.ventures-grid {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 0 var(--gutter);
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 56px;
-    align-items: end;
-}
-.ventures-body {
-    font-family: var(--serif);
-    font-style: italic;
-    font-size: clamp(20px, 2.2vw, 26px);
-    line-height: 1.4;
-    color: var(--paper);
-    max-width: 580px;
-}
-.ventures-body p + p { margin-top: 16px; }
-.ventures-body strong {
-    font-style: normal;
-    color: var(--accent-warm);
-    font-weight: 400;
-}
-.ventures-cta { align-self: end; }
-.ventures-cta a {
-    font-family: var(--mono);
-    font-size: 12px;
-    border: 1px solid var(--paper);
-    color: var(--paper);
-    padding: 10px 20px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    border-bottom: 1px solid var(--paper);
-    border-radius: 3px;
-    display: inline-block;
-    transition: background 0.25s, color 0.25s, transform 0.2s;
-}
-.ventures-cta a:hover {
-    background: var(--paper);
-    color: var(--ink);
-    border-color: var(--paper);
-    transform: translateY(-2px);
-}
-
-/* ============================================
    BEYOND
    ============================================ */
 .beyond-grid {
@@ -967,7 +853,6 @@ main, .ventures, .contact, .footer {
     .about-grid { grid-template-columns: 160px 1fr 220px; gap: 32px; }
     .exp { grid-template-columns: 200px 1fr; gap: 40px; }
     .paper { grid-template-columns: 1fr 1fr; gap: 40px; }
-    .ventures-grid { grid-template-columns: 1fr 180px; gap: 40px; }
 }
 
 @media (max-width: 900px) {
@@ -987,9 +872,6 @@ main, .ventures, .contact, .footer {
     .exp-tab-name { font-size: 18px; }
 
     .paper { grid-template-columns: 1fr; }
-    .credentials { grid-template-columns: 1fr 1fr; gap: 20px; }
-    .ventures-grid { grid-template-columns: 1fr; gap: 32px; }
-    .ventures-cta { align-self: start; }
     .beyond-grid { grid-template-columns: 1fr; gap: 24px; }
 
     .work-row { grid-template-columns: 60px 30px 1fr 40px; gap: 16px; }
@@ -1002,9 +884,6 @@ main, .ventures, .contact, .footer {
     .hero { padding: 42px var(--gutter) 38px; }
     .hero-name { letter-spacing: -0.02em; }
     .hero-bio { font-size: 15.5px; }
-    .credentials { grid-template-columns: 1fr; gap: 16px; }
-    .cred { border-left: none; border-top: 1px solid var(--rule); padding-left: 0; padding-top: 12px; }
-    .cred:first-child { border-top: 1px solid var(--ink); }
 
     .exp-title { font-size: 24px; }
     .exp-list li { font-size: 14.5px; padding-left: 22px; }
