@@ -31,7 +31,7 @@
     --nav-h:        64px;
     --max-w:        1240px;
     --gutter:       64px;
-    --section-y:    48px;
+    --section-y:    58px;
 }
 
 /* ---------- Reset ---------- */
@@ -181,7 +181,7 @@ main, .ventures, .contact, .footer {
 }
 .section-head {
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
 }
 .section-num {
     font-family: var(--mono);
@@ -189,7 +189,7 @@ main, .ventures, .contact, .footer {
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--ink-4);
-    margin-bottom: 8px;
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -224,7 +224,7 @@ main, .ventures, .contact, .footer {
     line-height: 1.2;
     font-weight: 400;
     color: var(--ink);
-    margin: 28px 0 12px;
+    margin: 38px 0 22px;
     letter-spacing: -0.01em;
 }
 
@@ -234,7 +234,7 @@ main, .ventures, .contact, .footer {
 .hero {
     max-width: var(--max-w);
     margin: 0 auto;
-    padding: 48px var(--gutter) 40px;
+    padding: 58px var(--gutter) 50px;
     border-bottom: 1px solid var(--rule);
 }
 .hero-eyebrow {
@@ -655,7 +655,7 @@ main, .ventures, .contact, .footer {
 
 /* Other research index */
 .other-research {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .other-research-label {
     font-family: var(--mono);
@@ -874,7 +874,7 @@ main, .ventures, .contact, .footer {
 .contact {
     max-width: 720px;
     margin: 0 auto;
-    padding: 60px var(--gutter) 48px;
+    padding: 70px var(--gutter) 58px;
     border-bottom: none;
     text-align: center;
 }
@@ -963,7 +963,7 @@ main, .ventures, .contact, .footer {
    RESPONSIVE
    ============================================ */
 @media (max-width: 1100px) {
-    :root { --gutter: 40px; --section-y: 40px; }
+    :root { --gutter: 40px; --section-y: 50px; }
     .about-grid { grid-template-columns: 160px 1fr 220px; gap: 32px; }
     .exp { grid-template-columns: 200px 1fr; gap: 40px; }
     .paper { grid-template-columns: 1fr 1fr; gap: 40px; }
@@ -977,7 +977,7 @@ main, .ventures, .contact, .footer {
     .nav-toggle { display: flex; }
     .nav-mark { flex: 1; }
 
-    .section-head { margin-bottom: 20px; }
+    .section-head { margin-bottom: 30px; }
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
     .about-portrait { max-width: 320px; }
     .exp { grid-template-columns: 1fr; gap: 32px; }
@@ -998,8 +998,8 @@ main, .ventures, .contact, .footer {
 }
 
 @media (max-width: 600px) {
-    :root { --gutter: 20px; --section-y: 32px; }
-    .hero { padding: 32px var(--gutter) 28px; }
+    :root { --gutter: 20px; --section-y: 42px; }
+    .hero { padding: 42px var(--gutter) 38px; }
     .hero-name { letter-spacing: -0.02em; }
     .hero-bio { font-size: 15.5px; }
     .credentials { grid-template-columns: 1fr; gap: 16px; }
@@ -1014,7 +1014,7 @@ main, .ventures, .contact, .footer {
     .work-row { padding: 18px 0; }
     .work-title { font-size: 18px; }
 
-    .contact { padding: 40px var(--gutter) 32px; }
+    .contact { padding: 50px var(--gutter) 42px; }
     .contact-title { font-size: clamp(40px, 11vw, 56px); }
     .contact-btn { padding: 14px 28px; font-size: 12px; }
 
