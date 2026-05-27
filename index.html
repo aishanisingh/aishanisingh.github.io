@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aishani Singh - Computer Science & Research</title>
+    <title>Aishani Singh — Machine Learning Research</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta name="description" content="CS undergraduate at Carnegie Mellon, ML researcher at the Robotics Institute's AUTON Lab, first-author at ISCA 2024, and founder of Civys.">
     <meta name="author" content="Aishani Singh">
@@ -12,14 +12,14 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://aishanisingh.github.io/">
-    <meta property="og:title" content="Aishani Singh - Computer Science & Research">
+    <meta property="og:title" content="Aishani Singh — Machine Learning Research">
     <meta property="og:description" content="CS undergraduate at Carnegie Mellon, ML researcher at the Robotics Institute's AUTON Lab, first-author at ISCA 2024, and founder of Civys.">
     <meta property="og:image" content="https://aishanisingh.github.io/images/profile-photo.jpg">
     <meta property="og:site_name" content="Aishani Singh">
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Aishani Singh - Computer Science & Research">
+    <meta name="twitter:title" content="Aishani Singh — Machine Learning Research">
     <meta name="twitter:description" content="CS undergraduate at Carnegie Mellon, ML researcher at the Robotics Institute's AUTON Lab, first-author at ISCA 2024, and founder of Civys.">
     <meta name="twitter:image" content="https://aishanisingh.github.io/images/profile-photo.jpg">
 
@@ -51,333 +51,518 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=40">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background effects -->
-    <div class="blob-container">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+
+<!-- ========== NAVIGATION ========== -->
+<header class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#top" class="nav-mark">Aishani <em>S.</em></a>
+        <nav class="nav-links" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#research">Research</a>
+            <a href="#building">Building</a>
+            <a href="#beyond">Beyond</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="https://drive.google.com/file/d/1bW4q7jkXqZ64RDKQXLjrCy0O1FAwWIsX/view?usp=sharing"
+           class="nav-cv" target="_blank" rel="noopener">CV ↗</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </div>
-
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="#" class="nav-logo">AS</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#research">Research</a>
-                <a href="#ventures">Ventures</a>
-                <a href="#misc">Misc.</a>
-                <a href="#contact">Contact</a>
-                <a href="https://drive.google.com/file/d/1bW4q7jkXqZ64RDKQXLjrCy0O1FAwWIsX/view?usp=sharing" class="nav-resume" target="_blank">CV</a>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#research">Research</a>
-        <a href="#ventures">Ventures</a>
-        <a href="#misc">Misc.</a>
+        <a href="#building">Building</a>
+        <a href="#beyond">Beyond</a>
         <a href="#contact">Contact</a>
-        <a href="https://drive.google.com/file/d/1bW4q7jkXqZ64RDKQXLjrCy0O1FAwWIsX/view?usp=sharing" class="nav-resume" target="_blank">CV</a>
+        <a href="https://drive.google.com/file/d/1bW4q7jkXqZ64RDKQXLjrCy0O1FAwWIsX/view?usp=sharing"
+           target="_blank" rel="noopener">CV ↗</a>
     </div>
+</header>
 
-    <main class="main">
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-content">
-                <p class="hero-greeting">Hi, I'm</p>
-                <h1 class="hero-name">Aishani Singh!</h1>
-                <h2 class="hero-tagline">I research and build machine learning systems for the real world.</h2>
-                <p class="hero-description">
-                    I'm a CS undergrad at Carnegie Mellon doing research on vision-language models at the AUTON Lab, with a first paper published at ISCA 2024. On the side, I'm building <strong>Civys</strong>, an AI tool that helps compliance teams make sense of legislation, and recently joined Pear VC's first Prime cohort as a founding engineer.
+<main id="top">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-eyebrow">Pittsburgh, PA · Updated May 2026</div>
+        <h1 class="hero-name">Aishani <em>Singh</em></h1>
+        <p class="hero-statement">
+            I research vision-language models at Carnegie Mellon's AUTON Lab,
+            and build <a href="https://civys.vercel.app" class="hero-civys" target="_blank" rel="noopener">Civys</a> —
+            an AI tool that helps compliance teams parse legislation.
+        </p>
+        <p class="hero-bio">
+            CS undergraduate at Carnegie Mellon's School of Computer Science.
+            My work sits at the intersection of <strong>machine learning,
+            probabilistic modeling, and agentic&nbsp;AI</strong>, with prior
+            research at Georgia Tech, Harvard, and UC Berkeley. I'm drawn to
+            systems that ship.
+        </p>
+
+        <!-- Credential strip -->
+        <dl class="credentials" aria-label="Credentials">
+            <div class="cred">
+                <dt>
+                    <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                    Affiliation
+                </dt>
+                <dd class="cred-val">Carnegie Mellon <em>SCS</em></dd>
+                <dd class="cred-sub">Undergraduate, CS</dd>
+            </div>
+            <div class="cred">
+                <dt>
+                    <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"></path><path d="M14 9.3V1.99"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path></svg>
+                    Lab
+                </dt>
+                <dd class="cred-val">CMU Robotics, <em>AUTON</em></dd>
+                <dd class="cred-sub">Research assistant · 2026 –</dd>
+            </div>
+            <div class="cred">
+                <dt>
+                    <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                    Selected publication
+                </dt>
+                <dd class="cred-val">First author, <em>ISCA 2024</em></dd>
+                <dd class="cred-sub">3D dataset distillation (NeRD)</dd>
+            </div>
+            <div class="cred">
+                <dt>
+                    <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    Building
+                </dt>
+                <dd class="cred-val">Pear Prime, <em>cohort 01</em></dd>
+                <dd class="cred-sub">8 of 500+ · founding engineer</dd>
+            </div>
+        </dl>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+        <header class="section-head">
+            <div class="section-num">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"></circle><path d="M5.5 21a6.5 6.5 0 0 1 13 0"></path></svg>
+                <span>§ 01</span>About
+            </div>
+            <h2 class="section-title">About.</h2>
+        </header>
+
+        <div class="about-grid">
+
+            <aside class="about-meta">
+                <div>
+                    <dt>
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Based in
+                    </dt>
+                    <dd>Pittsburgh, PA</dd>
+                </div>
+                <div>
+                    <dt>
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Languages
+                    </dt>
+                    <dd>Python, PyTorch, TypeScript, C, SQL</dd>
+                </div>
+                <div>
+                    <dt>
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        Focus areas
+                    </dt>
+                    <dd>
+                        Vision-language models · Probabilistic modeling ·
+                        Agentic AI · 3D ML · Responsible ML · AI accessibility
+                    </dd>
+                </div>
+                <div>
+                    <dt>
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        Open to
+                    </dt>
+                    <dd>Research collaborations, PhD conversations, founding-engineering intros</dd>
+                </div>
+            </aside>
+
+            <div class="about-body">
+                <p>
+                    I'm an undergraduate at Carnegie Mellon's School of
+                    Computer Science and a research assistant at the CMU
+                    Robotics Institute's AUTON Lab. My work sits at the
+                    intersection of machine learning, probabilistic modeling,
+                    and agentic AI, with a particular interest in
+                    vision-language models and systems that reliably serve
+                    real users.
                 </p>
-                <div class="hero-cta">
-                    <a href="#research" class="btn btn-primary">View My Research</a>
-                    <a href="https://github.com/aishanisingh" target="_blank" class="btn btn-secondary">GitHub</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="section" id="about">
-            <h2 class="section-heading"><span class="section-number">01.</span> About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Hello! I'm Aishani, an undergraduate at Carnegie Mellon's School of
-                        Computer Science and a research assistant at the CMU Robotics Institute's
-                        AUTON Lab. My work sits at the intersection of machine learning,
-                        probabilistic modeling, and agentic AI, with a particular interest in
-                        vision-language models and systems that reliably serve real users.
-                    </p>
-                    <p>
-                        I started building AI in high school and have since contributed to
-                        research at Georgia Tech (first-author at ISCA 2024), Harvard, and UC
-                        Berkeley. Outside the lab, I'm building <strong>Civys</strong>, my
-                        early-stage startup, and serving as a founding engineer in Pear VC's
-                        inaugural Prime cohort. I'm drawn to the interplay between rigorous
-                        research and shipping real products — in my experience, each sharpens
-                        the other.
-                    </p>
-                    <p>
-                        Day to day, I work in Python and PyTorch, with frequent detours through
-                        React, TensorFlow, SQL, and C. Areas I'm focused on:
-                    </p>
-                    <ul class="tech-list">
-                        <li>Vision-Language Models</li>
-                        <li>Probabilistic Modeling</li>
-                        <li>Agentic AI</li>
-                        <li>3D Machine Learning</li>
-                        <li>Responsible ML</li>
-                        <li>AI Accessibility</li>
-                    </ul>
-                </div>
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="images/profile-photo.jpg" alt="Aishani Singh" class="profile-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section" id="experience">
-            <h2 class="section-heading"><span class="section-number">02.</span> Experience</h2>
-            <div class="experience-container">
-                <div class="experience-tabs">
-                    <button class="tab-btn active" data-tab="0">CMU</button>
-                    <button class="tab-btn" data-tab="1">Georgia Tech</button>
-                    <button class="tab-btn" data-tab="2">Harvard</button>
-                    <button class="tab-btn" data-tab="3">Berkeley</button>
-                </div>
-                <div class="experience-content">
-                    <div class="experience-panel active" data-panel="0">
-                        <h3 class="experience-title">Research Assistant <span class="experience-company">@ CMU Robotics Institute, AUTON Lab</span></h3>
-                        <p class="experience-date">Jan 2026 – Present</p>
-                        <ul class="experience-list">
-                            <li>Serving as technical point-of-contact for the AirLab VLM team; benchmarking VLM architectures on HuggingFace across masking, video understanding, and multimodal reasoning tasks</li>
-                            <li>Designing no-code annotation interfaces to enable structured feedback from non-programmers for the DARPA Triage Challenge</li>
-                            <li>Supporting probabilistic modeling research through Bayesian network development</li>
-                        </ul>
-                    </div>
-                    <div class="experience-panel" data-panel="1">
-                        <h3 class="experience-title">Undergraduate Researcher <span class="experience-company">@ Georgia Tech </span></h3>
-                        <p class="experience-date">Jan 2024 - June 2024</p>
-                        <ul class="experience-list">
-                            <li>Researched data distillation methods for NeRF-based 3D reconstruction with Prof. Yingyan (Celine) Li, achieving near-full reconstruction quality using as little as 40% of the original training data</li>
-                            <li>Designed and evaluated novel distillation pipelines using PyTorch on large-scale 3D imaging datasets</li>
-                            <li>Analyzed reconstruction fidelity, training efficiency, and generalization across distilled datasets</li>
-                            <li>Published first-author paper at ISCA 2024</li>
-                        </ul>
-                    </div>
-                    <div class="experience-panel" data-panel="2">
-                        <h3 class="experience-title">Research Assistant <span class="experience-company">@ Harvard</span></h3>
-                        <p class="experience-date">Jun 2024 – Aug 2024</p>
-                        <ul class="experience-list">
-                            <li>Evaluated datasets generated by AI models for hardware design workflows</li>
-                            <li>Developed quantitative tools to measure hardware-relevant metrics and dataset quality</li>
-                            <li>Collaborated with PhD researchers to assess generalization and robustness of generative design data</li>
-                            <li>Conducted research under the guidance of Prof. Vijay Reddi</li>
-                        </ul>
-                    </div>
-                    <div class="experience-panel" data-panel="3">
-                        <h3 class="experience-title">Undergraduate Researcher <span class="experience-company">@ UC Berkeley</span></h3>
-                        <p class="experience-date">Aug 2022 – Dec 2023</p>
-                        <ul class="experience-list">
-                            <li>Co-authored research on long-form video understanding and generation challenges in large-scale vision models</li>
-                            <li>Built and curated <b>CPDM</b>, a 21,000-image benchmark across 4 copyright categories (style, portrait, artistic creation, licensed illustration) for studying diffusion-model unlearning</li>
-                            <li>Designed evaluation tooling and benchmarked 4 unlearning approaches (gradient ascent, weight pruning, ESD, Forget-Me-Not) on style leakage, FID, and a copyright similarity metric</li>
-                            <li>Co-organized the Long-form Video Understanding & Generation Competition at CVPR 2023 under Prof. Kurt Keutzer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research Section -->
-        <section class="section" id="research">
-            <h2 class="section-heading"><span class="section-number">03.</span> Research</h2>
-
-            <!-- Featured Research -->
-            <div class="featured-projects">
-                <article class="featured-project">
-                    <div class="project-body">
-                        <div class="project-header">
-                            <p class="project-overline">Featured Research</p>
-                            <h3 class="project-title">3D Dataset Distillation: Condensing 3D Datasets for Enhanced Data Efficiency in 3D Reconstruction</h3>
-                        </div>
-                        <div class="project-description">
-                            <p>I conducted research on 3D dataset distillation for efficient 3D reconstruction, addressing the geometric redundancy and scalability limits of Neural Radiance Fields (NeRFs). I developed NeRD, a principled system that keeps the NeRF model fixed while iteratively pruning redundant views using 3D projection validity and depth-consistency constraints to preserve independent spatial information. Our experiments show near-full reconstruction quality using as little as 40% of the original data, demonstrating that viewpoint diversity matters more than dataset size. This work was conducted at Georgia Tech's Efficient and Intelligent Computing Lab under Prof. Yingyan (Celine) Li, with collaborators Jason Zhang, Renyun Li, and Yonggan Fu.</p>
-                        </div>
-                        <div class="project-image">
-                            <img src="images/nerd-research.png" alt="NeRD research visualization showing 3D projection validity and depth consistency" class="project-img">
-                        </div>
-                        <div class="project-meta">
-                            <ul class="project-tech">
-                                <li>Computer Vision & Graphics</li>
-                                <li>Machine Learning Systems</li>
-                                <li>Algorithms</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://drive.google.com/file/d/1xyntLiMeD4FvfzRAH5PK_DmwQXaA153W/view" target="_blank" aria-label="Paper">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                                </a>
-                                <a href="https://drive.google.com/file/d/1LBreonXB94B0-XxQSqHz8DOgBWGdD7wZ/view?usp=sharing" target="_blank" aria-label="Video">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
+                <p>
+                    I started building AI in high school and have since
+                    contributed to research at Georgia Tech (first-author at
+                    ISCA 2024), Harvard, and UC Berkeley. Outside the lab,
+                    I'm building <strong>Civys</strong>, my early-stage
+                    startup, and serving as a founding engineer in Pear VC's
+                    inaugural Prime cohort.
+                </p>
+                <blockquote class="pull">
+                    I'm drawn to the interplay between rigorous research and
+                    shipping real products — in my experience, each sharpens
+                    the other.
+                </blockquote>
+                <p>
+                    Day to day, I work in Python and PyTorch, with frequent
+                    detours through React, TensorFlow, SQL, and C. If you're
+                    working in vision-language, probabilistic modeling, or
+                    assistive ML — I'd love to hear from you.
+                </p>
             </div>
 
-            <!-- Other Research -->
-            <h3 class="other-projects-title">Other Research & Projects</h3>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-card-top">
-                        <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"></path></svg>
-                        </div>
-                        <div class="project-card-links">
-                            <a href="https://arxiv.org/pdf/2403.12052" target="_blank" aria-label="Paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></a>
-                        </div>
+            <figure class="about-portrait">
+                <div class="portrait-wrap">
+                    <div class="portrait-frame">
+                        <img src="images/profile-photo.jpg" alt="Aishani Singh" loading="lazy">
                     </div>
-                    <h4 class="project-card-title">Model Unlearning</h4>
-                    <p class="project-card-desc">Co-developed CPDM, a 21,000-image dataset, benchmark, and evaluation metric for studying copyright infringement and machine unlearning in text-to-image diffusion models.</p>
-                    <ul class="project-card-tech">
-                        <li>Generative Models</li>
-                        <li>Evaluation Metrics</li>
-                        <li>Responsible ML</li>
+                </div>
+                <figcaption>A. Singh · CMU SCS · 2026</figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section class="section" id="experience">
+        <header class="section-head">
+            <div class="section-num">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9v.01M9 13v.01M9 17v.01M15 9v.01M15 13v.01M15 17v.01"></path></svg>
+                <span>§ 02</span>Experience
+            </div>
+            <h2 class="section-title">Experience.</h2>
+        </header>
+
+        <div class="exp">
+            <div class="exp-tabs" role="tablist" aria-label="Experience by lab">
+                <button class="exp-tab active" data-tab="0" role="tab" aria-selected="true">
+                    <span class="exp-tab-year">2026 –</span>
+                    <span class="exp-tab-name">CMU</span>
+                </button>
+                <button class="exp-tab" data-tab="1" role="tab" aria-selected="false">
+                    <span class="exp-tab-year">2024</span>
+                    <span class="exp-tab-name">Harvard</span>
+                </button>
+                <button class="exp-tab" data-tab="2" role="tab" aria-selected="false">
+                    <span class="exp-tab-year">2024</span>
+                    <span class="exp-tab-name">Georgia Tech</span>
+                </button>
+                <button class="exp-tab" data-tab="3" role="tab" aria-selected="false">
+                    <span class="exp-tab-year">2022 – 23</span>
+                    <span class="exp-tab-name">UC Berkeley</span>
+                </button>
+            </div>
+
+            <div class="exp-panels">
+
+                <article class="exp-panel active" data-panel="0" role="tabpanel">
+                    <div class="exp-meta">
+                        <span>CMU Robotics Institute</span>
+                        <span>AUTON Lab</span>
+                        <span>Jan 2026 – Present</span>
+                    </div>
+                    <h3 class="exp-title">Research Assistant <em>· AUTON Lab</em></h3>
+                    <ul class="exp-list">
+                        <li>Serving as technical point-of-contact for the AirLab VLM team; benchmarking VLM architectures on HuggingFace across masking, video understanding, and multimodal reasoning tasks.</li>
+                        <li>Designing no-code annotation interfaces to enable structured feedback from non-programmers for the DARPA Triage Challenge.</li>
+                        <li>Supporting probabilistic modeling research through Bayesian network development.</li>
                     </ul>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-card-top">
-                        <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><circle cx="8" cy="10" r="1" fill="currentColor"></circle><circle cx="12" cy="10" r="1" fill="currentColor"></circle><circle cx="16" cy="10" r="1" fill="currentColor"></circle></svg>
-                        </div>
-                        <div class="project-card-links">
-                            <a href="https://www.canva.com/design/DAFcTdyuwxc/offnskHkWmlww5xg7lPkwA/edit?utm_content=DAFcTdyuwxc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" aria-label="Paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></a>
-                        </div>
+                <article class="exp-panel" data-panel="1" role="tabpanel">
+                    <div class="exp-meta">
+                        <span>Harvard SEAS</span>
+                        <span>Vijay Reddi Lab</span>
+                        <span>Jun 2024 – Aug 2024</span>
                     </div>
-                    <h4 class="project-card-title">LiveConv</h4>
-                    <p class="project-card-desc">A fully on-device, real-time speech-to-speech translation system using cascaded ASR and attention-based translation models on AR glasses.</p>
-                    <ul class="project-card-tech">
-                        <li>Natural Language Processing</li>
-                        <li>Edge AI</li>
-                        <li>Real-Time Systems</li>
+                    <h3 class="exp-title">Research Assistant <em>· Harvard</em></h3>
+                    <ul class="exp-list">
+                        <li>Evaluated datasets generated by AI models for hardware design workflows.</li>
+                        <li>Developed quantitative tools to measure hardware-relevant metrics and dataset quality.</li>
+                        <li>Collaborated with PhD researchers to assess generalization and robustness of generative design data.</li>
+                        <li>Conducted research under the guidance of Prof. Vijay Reddi.</li>
                     </ul>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-card-top">
-                        <div class="folder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                        </div>
-                        <div class="project-card-links">
-                            <a href="https://www.canva.com/design/DAE4rzgqLIE/HdAScc4ohRFn1mUfb5cZXA/edit?utm_content=DAE4rzgqLIE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" aria-label="Paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg></a>
-                        </div>
+                <article class="exp-panel" data-panel="2" role="tabpanel">
+                    <div class="exp-meta">
+                        <span>Georgia Tech</span>
+                        <span>EIC Lab · Prof. Yingyan (Celine) Lin</span>
+                        <span>Jan 2024 – Jun 2024</span>
                     </div>
-                    <h4 class="project-card-title">Netra</h4>
-                    <p class="project-card-desc">An AI smart-glasses system for visually impaired navigation, pairing InceptionV3-with-attention image captioning with a WaveNet-based text-to-speech pipeline on resource-constrained hardware. CSEF Finalist and Synopsys Championship 1st Place (2022).</p>
-                    <ul class="project-card-tech">
-                        <li>Computer Vision</li>
-                        <li>Edge AI</li>
-                        <li>Assistive Computing</li>
+                    <h3 class="exp-title">Undergraduate Researcher <em>· Georgia Tech</em></h3>
+                    <ul class="exp-list">
+                        <li>Researched data distillation methods for NeRF-based 3D reconstruction, achieving near-full reconstruction quality using as little as 40% of the original training data.</li>
+                        <li>Designed and evaluated novel distillation pipelines using PyTorch on large-scale 3D imaging datasets.</li>
+                        <li>Analyzed reconstruction fidelity, training efficiency, and generalization across distilled datasets.</li>
+                        <li>Published first-author paper at <strong>ISCA 2024</strong>.</li>
                     </ul>
                 </article>
-            </div>
-        </section>
 
-        <!-- Entrepreneurship Section -->
-        <section class="section" id="ventures">
-            <h2 class="section-heading"><span class="section-number">04.</span> Entrepreneurship</h2>
-            <div class="misc-intro">
-                <p>Alongside research, I'm building <a href="https://civys.vercel.app" target="_blank"><strong>Civys</strong></a>, an AI platform that turns complex legislation and policy text into audit-ready briefs for compliance teams, city attorneys, and local government staff. It's incubated through CMU's Swartz Center for Entrepreneurship and the UEA.x builder community, with mentorship from YC, Pear, and 8VC partners. Separately, I'm a founding engineer in Pear VC's inaugural Prime cohort (8 of 500+). <a href="https://civys.vercel.app" target="_blank">View the live demo →</a></p>
-            </div>
-        </section>
+                <article class="exp-panel" data-panel="3" role="tabpanel">
+                    <div class="exp-meta">
+                        <span>UC Berkeley</span>
+                        <span>Keutzer Group</span>
+                        <span>Aug 2022 – Dec 2023</span>
+                    </div>
+                    <h3 class="exp-title">Undergraduate Researcher <em>· UC Berkeley</em></h3>
+                    <ul class="exp-list">
+                        <li>Co-authored research on long-form video understanding and generation challenges in large-scale vision models.</li>
+                        <li>Built and curated <strong>CPDM</strong>, a 21,000-image benchmark across four copyright categories (style, portrait, artistic creation, licensed illustration) for studying diffusion-model unlearning.</li>
+                        <li>Designed evaluation tooling and benchmarked four unlearning approaches (gradient ascent, weight pruning, ESD, Forget-Me-Not) on style leakage, FID, and a copyright similarity metric.</li>
+                        <li>Co-organized the Long-form Video Understanding &amp; Generation Competition at CVPR 2023 under Prof. Kurt Keutzer.</li>
+                    </ul>
+                </article>
 
-        <!-- Miscellaneous Section -->
-        <section class="section" id="misc">
-            <h2 class="section-heading"><span class="section-number">05.</span> Beyond the Lab</h2>
-            <div class="misc-container">
-                <div class="misc-card">
-                    <div class="misc-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
-                    </div>
-                    <h3 class="misc-title">Creative Pursuits</h3>
-                    <ul class="misc-desc">
-                        <li>Theatre performer and stage manager, and former writer/editor for <a href="https://harkeraquila.com/staff_name/aishani-singh/" target="_blank">The Harker Aquila</a>; work in plays and journalism received Honorable Mention from the Alliance for Young Artists & Writers.</li>
-                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RESEARCH ========== -->
+    <section class="section" id="research">
+        <header class="section-head">
+            <div class="section-num">
+                <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9.663 17h4.673M12 3v1M5.6 5.6l.7.7M3 12h1M19.4 5.6l-.7.7M21 12h-1M12 7a5 5 0 0 1 3.5 8.5L15 17H9l-.5-1.5A5 5 0 0 1 12 7z"></path><line x1="9" y1="21" x2="15" y2="21"></line></svg>
+                <span>§ 03</span>Research
+            </div>
+            <h2 class="section-title">Research.</h2>
+        </header>
+
+        <h3 class="section-subhead">Featured publication</h3>
+
+        <article class="paper">
+            <div class="paper-figure">
+                <div class="paper-figure-frame">
+                    <img src="images/nerd-research.png" alt="NeRD — 3D dataset distillation visualization" loading="lazy">
                 </div>
-                <div class="misc-card">
-                    <div class="misc-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                    </div>
-                    <h3 class="misc-title">Reading & Learning</h3>
-                    <ul class="misc-desc">
-                        <li>Currently reading political theory, technology ethics, and contemporary history; especially interested in AI governance, accessibility, and digital rights.</li>
-                    </ul>
+                <figcaption>Fig. 1 · NeRD — projection-validity &amp; depth-consistency pruning</figcaption>
+            </div>
+            <div class="paper-body">
+                <div class="paper-meta">
+                    <span class="paper-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </span>
+                    <span>2024</span>
+                    <span class="paper-venue">ISCA '24 · First author</span>
+                    <span>3D ML</span>
                 </div>
-                <div class="misc-card">
-                    <div class="misc-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                    </div>
-                    <h3 class="misc-title">Community & Involvement</h3>
-                    <ul class="misc-desc">
-                        <li>Previously interned with the California State Senate on accessibility and inclusive housing policy (<a href="https://drive.google.com/file/d/1LprV8eKekz97ZgC1qSrQOvzYlJJDVHuU/view?usp=sharing" target="_blank">sample work</a>); committed to building technology that meaningfully serves underrepresented communities.</li>
-                    </ul>
+                <h3 class="paper-title">
+                    3D Dataset Distillation: Condensing 3D Datasets for
+                    Enhanced Data Efficiency in 3D Reconstruction.
+                </h3>
+                <p class="paper-authors">
+                    <strong>Aishani Singh</strong>, Jason Zhang, Renyun Li,
+                    Yonggan Fu, Yingyan (Celine) Lin.
+                </p>
+                <p class="paper-abstract">
+                    NeRD is a principled system for distilling 3D datasets
+                    while keeping the NeRF model fixed: it iteratively prunes
+                    redundant views using projection-validity and
+                    depth-consistency constraints to preserve independent
+                    spatial information. Across benchmarks, near-full
+                    reconstruction quality holds with as little as 40&#37; of
+                    the original data — suggesting viewpoint diversity matters
+                    more than dataset size. Conducted at Georgia Tech's
+                    Efficient and Intelligent Computing Lab.
+                </p>
+                <div class="paper-links">
+                    <a href="https://drive.google.com/file/d/1xyntLiMeD4FvfzRAH5PK_DmwQXaA153W/view"
+                       target="_blank" rel="noopener" class="paper-link primary">Read paper [PDF]</a>
+                    <a href="https://drive.google.com/file/d/1LBreonXB94B0-XxQSqHz8DOgBWGdD7wZ/view?usp=sharing"
+                       target="_blank" rel="noopener" class="paper-link">Watch talk</a>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <!-- Contact Section -->
-        <section class="section section-contact" id="contact">
-            <h2 class="section-heading"><span class="section-number">06.</span> What's Next?</h2>
-            <h3 class="contact-title">Let's Connect</h3>
-            <p class="contact-description">
-                I'm always interested in discussing research opportunities, collaborations, or simply
-                connecting with others in the field. Don't hesitate to reach out!
+        <!-- Other research as index -->
+        <div class="other-research">
+            <h3 class="section-subhead">Other research &amp; projects</h3>
+            <ul class="work-list" role="list">
+                <li>
+                    <a class="work-row" href="https://arxiv.org/pdf/2403.12052" target="_blank" rel="noopener">
+                        <span class="work-year">2023</span>
+                        <span class="work-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"></path></svg>
+                        </span>
+                        <span class="work-body">
+                            <span class="work-title"><em>CPDM</em> — model-unlearning benchmark</span>
+                            <span class="work-desc">A 21,000-image benchmark across four copyright categories — style, portrait, artistic creation, licensed illustration — for studying diffusion-model unlearning. We evaluated four unlearning approaches (gradient ascent, weight pruning, ESD, Forget-Me-Not) against style leakage, FID, and a copyright similarity metric.</span>
+                            <span class="work-meta-line">
+                                <span>Berkeley · Keutzer Group</span>
+                                <span>Diffusion · Copyright · 21k images</span>
+                            </span>
+                        </span>
+                        <span class="work-arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="work-row" href="https://www.canva.com/design/DAFcTdyuwxc/offnskHkWmlww5xg7lPkwA/edit?utm_content=DAFcTdyuwxc&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton" target="_blank" rel="noopener">
+                        <span class="work-year">2023</span>
+                        <span class="work-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><circle cx="8" cy="10" r="1" fill="currentColor"></circle><circle cx="12" cy="10" r="1" fill="currentColor"></circle><circle cx="16" cy="10" r="1" fill="currentColor"></circle></svg>
+                        </span>
+                        <span class="work-body">
+                            <span class="work-title"><em>LiveConv</em> — real-time speech-to-speech translation</span>
+                            <span class="work-desc">A fully on-device, real-time speech-to-speech translation system for AR glasses, using cascaded ASR and attention-based translation models. Designed for low-latency live conversation under tight on-device compute budgets.</span>
+                            <span class="work-meta-line">
+                                <span>AR glasses · on-device</span>
+                                <span>NLP · Edge AI · Real-time</span>
+                            </span>
+                        </span>
+                        <span class="work-arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="work-row" href="https://www.canva.com/design/DAE4rzgqLIE/HdAScc4ohRFn1mUfb5cZXA/edit?utm_content=DAE4rzgqLIE&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton" target="_blank" rel="noopener">
+                        <span class="work-year">2022</span>
+                        <span class="work-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </span>
+                        <span class="work-body">
+                            <span class="work-title"><em>Netra</em> — AI smart glasses for the visually impaired</span>
+                            <span class="work-desc">AI smart-glasses system for visually-impaired navigation, pairing InceptionV3-with-attention image captioning with a WaveNet-based text-to-speech pipeline on resource-constrained hardware. CSEF Finalist and Synopsys Championship 1st Place (2022).</span>
+                            <span class="work-meta-line">
+                                <span>Synopsys 1st · CSEF Finalist</span>
+                                <span>CV · Edge AI · Assistive</span>
+                            </span>
+                        </span>
+                        <span class="work-arrow" aria-hidden="true">→</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<!-- ========== BUILDING / VENTURES (dark band) ========== -->
+<section class="ventures" id="building">
+    <header class="section-head">
+        <div class="section-num">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+            <span>§ 04</span>Building
+        </div>
+        <h2 class="section-title">Building.</h2>
+    </header>
+
+    <div class="ventures-grid">
+        <div class="ventures-body">
+            <p>
+                <strong>Civys</strong> turns dense legislation and policy text
+                into audit-ready briefs for compliance teams, city attorneys,
+                and local-government staff — the people who currently read
+                this material by hand.
             </p>
-            <a href="mailto:aishanis@cs.cmu.edu" class="btn btn-primary btn-large">Get In Touch</a>
-        </section>
-    </main>
+            <p>
+                It's the practical end of the same question my research is
+                built around: how do you make ML systems trustworthy enough
+                that real institutions will put weight on them?
+            </p>
+        </div>
 
-    <!-- Footer -->
-    <footer class="footer">
+        <div class="ventures-cta">
+            <a href="https://civys.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========== BEYOND THE LAB ========== -->
+<section class="section" id="beyond">
+    <header class="section-head">
+        <div class="section-num">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            <span>§ 05</span>Beyond the lab
+        </div>
+        <h2 class="section-title">Beyond the lab.</h2>
+    </header>
+
+    <div class="beyond-grid">
+        <article class="beyond-card">
+            <div class="beyond-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+            </div>
+            <h3 class="beyond-title">Creative pursuits</h3>
+            <p>
+                Theatre performer and stage manager; former writer and editor
+                for <a href="https://harkeraquila.com/staff_name/aishani-singh/" target="_blank" rel="noopener">The Harker Aquila</a>.
+                Work in plays and journalism received Honorable Mention from
+                the Alliance for Young Artists &amp; Writers.
+            </p>
+        </article>
+
+        <article class="beyond-card">
+            <div class="beyond-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <h3 class="beyond-title">Reading &amp; learning</h3>
+            <p>
+                Currently working through political theory, technology ethics,
+                and contemporary history. Particularly interested in AI
+                governance, accessibility, and digital rights.
+            </p>
+        </article>
+
+        <article class="beyond-card">
+            <div class="beyond-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 class="beyond-title">Community</h3>
+            <p>
+                Previously interned with the California State Senate on
+                accessibility and inclusive-housing policy
+                (<a href="https://drive.google.com/file/d/1LprV8eKekz97ZgC1qSrQOvzYlJJDVHuU/view?usp=sharing" target="_blank" rel="noopener">sample work</a>).
+                Committed to building technology that serves underrepresented
+                communities.
+            </p>
+        </article>
+    </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="contact" id="contact">
+    <div class="contact-inner">
+        <div class="section-num contact-num">
+            <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>§ 06</span>What's next?
+        </div>
+        <h2 class="contact-title">Let's <em>connect.</em></h2>
+        <p class="contact-description">
+            I'm always interested in discussing research opportunities,
+            collaborations, or simply connecting with others in the field.
+            Don't hesitate to reach out.
+        </p>
+        <a href="mailto:aishanis@cs.cmu.edu" class="contact-btn">Get in touch</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-inner">
         <div class="footer-social">
-            <a href="https://github.com/aishanisingh" target="_blank" aria-label="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <a href="https://github.com/aishanisingh" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
-            <a href="https://www.linkedin.com/in/aishani-singh-416336219/" target="_blank" aria-label="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <a href="https://www.linkedin.com/in/aishani-singh-416336219/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </a>
-            <a href="https://scholar.google.com/citations?hl=en&user=r7VLLYsAAAAJ" target="_blank" aria-label="Google Scholar">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path d="M12 14v7"></path></svg>
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=r7VLLYsAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path d="M12 14v7"></path></svg>
             </a>
             <a href="mailto:aishanis@cs.cmu.edu" aria-label="Email">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </a>
         </div>
-        <p class="footer-credit">built by aishani singh</p>
-    </footer>
+        <span class="footer-credit">Built by Aishani · Pittsburgh · 2026</span>
+    </div>
+</footer>
 
-    <script src="script.js?v=3"></script>
+<script src="script.js"></script>
 </body>
 </html>

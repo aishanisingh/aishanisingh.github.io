@@ -1,168 +1,157 @@
-// ========================================
-// Professional Portfolio - JavaScript
-// ========================================
+/* ============================================
+   Aishani Singh — Personal Site
+   Minimal interaction layer
+   ============================================ */
 
-// Cursor spotlight effect
-function initCursorGlow() {
-    const glow = document.createElement('div');
-    glow.className = 'cursor-glow';
-    document.body.appendChild(glow);
+(function () {
+    'use strict';
 
-    let mouseX = 0;
-    let mouseY = 0;
-    let glowX = 0;
-    let glowY = 0;
+    /* ---------- Experience tabs ---------- */
+    function initExperienceTabs() {
+        const tabs   = document.querySelectorAll('.exp-tab');
+        const panels = document.querySelectorAll('.exp-panel');
+        if (!tabs.length) return;
 
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
-    });
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                const target = tab.getAttribute('data-tab');
 
-    // Smooth follow animation
-    function animateGlow() {
-        const dx = mouseX - glowX;
-        const dy = mouseY - glowY;
+                tabs.forEach((t) => {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                panels.forEach((p) => p.classList.remove('active'));
 
-        glowX += dx * 0.1;
-        glowY += dy * 0.1;
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
 
-        glow.style.left = glowX + 'px';
-        glow.style.top = glowY + 'px';
+                const targetPanel = document.querySelector(
+                    '.exp-panel[data-panel="' + target + '"]'
+                );
+                if (targetPanel) targetPanel.classList.add('active');
+            });
 
-        requestAnimationFrame(animateGlow);
-    }
-
-    animateGlow();
-
-    // Hide glow when mouse leaves window
-    document.addEventListener('mouseleave', () => {
-        glow.style.opacity = '0';
-    });
-
-    document.addEventListener('mouseenter', () => {
-        glow.style.opacity = '1';
-    });
-}
-
-// Only enable cursor glow on desktop (not touch devices)
-if (window.matchMedia('(pointer: fine)').matches) {
-    initCursorGlow();
-}
-
-// Experience tabs functionality
-function initExperienceTabs() {
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabPanels = document.querySelectorAll('.experience-panel');
-
-    console.log('Tabs found:', tabButtons.length);
-    console.log('Panels found:', tabPanels.length);
-
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetTab = this.getAttribute('data-tab');
-            console.log('Tab clicked:', targetTab);
-
-            // Remove active class from all buttons and panels
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabPanels.forEach(panel => panel.classList.remove('active'));
-
-            // Add active class to clicked button and corresponding panel
-            this.classList.add('active');
-            const targetPanel = document.querySelector('.experience-panel[data-panel="' + targetTab + '"]');
-            if (targetPanel) {
-                targetPanel.classList.add('active');
-                console.log('Panel activated:', targetTab);
-            }
-        });
-    });
-}
-
-// Mobile menu toggle
-function initMobileMenu() {
-    const menuToggle = document.querySelector('.nav-toggle');
-    const mobileMenu = document.querySelector('.mobile-menu');
-
-    if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-
-        // Close menu when clicking a link
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
+            // Keyboard navigation between tabs (← →)
+            tab.addEventListener('keydown', (e) => {
+                if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+                e.preventDefault();
+                const list = Array.from(tabs);
+                const i = list.indexOf(tab);
+                const next = e.key === 'ArrowRight'
+                    ? list[(i + 1) % list.length]
+                    : list[(i - 1 + list.length) % list.length];
+                next.focus();
+                next.click();
             });
         });
+    }
 
-        // Close menu when clicking outside
+    /* ---------- Mobile menu ---------- */
+    function initMobileMenu() {
+        const toggle = document.getElementById('nav-toggle');
+        const menu   = document.getElementById('mobile-menu');
+        if (!toggle || !menu) return;
+
+        const close = () => {
+            menu.classList.remove('active');
+            toggle.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+        };
+        const open = () => {
+            menu.classList.add('active');
+            toggle.classList.add('active');
+            toggle.setAttribute('aria-expanded', 'true');
+        };
+
+        toggle.addEventListener('click', () => {
+            menu.classList.contains('active') ? close() : open();
+        });
+
+        // Close on link click
+        menu.querySelectorAll('a').forEach((a) => {
+            a.addEventListener('click', close);
+        });
+
+        // Close on outside click
         document.addEventListener('click', (e) => {
-            if (!menuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
-                mobileMenu.classList.remove('active');
-                menuToggle.classList.remove('active');
+            if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+                close();
             }
+        });
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') close();
         });
     }
-}
 
-// Smooth scroll for navigation links
-function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+    /* ---------- Smooth scroll for in-page anchors ---------- */
+    function initSmoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach((a) => {
+            a.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href.length < 2) return;
+                const target = document.querySelector(href);
+                if (!target) return;
+                e.preventDefault();
+                const navH = document.querySelector('.nav')?.offsetHeight || 0;
+                const y = target.getBoundingClientRect().top + window.scrollY - navH + 1;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            });
         });
-    });
-}
+    }
 
-// Navbar background on scroll
-function initNavbarScroll() {
-    const navbar = document.querySelector('.navbar');
+    /* ---------- Nav state on scroll ---------- */
+    function initNavScroll() {
+        const nav = document.querySelector('.nav');
+        if (!nav) return;
+        let lastY = window.scrollY;
+        const onScroll = () => {
+            const y = window.scrollY;
+            nav.classList.toggle('scrolled', y > 8);
+            lastY = y;
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-}
+    /* ---------- Cursor glow (desktop only) ---------- */
+    function initCursorGlow() {
+        if (!window.matchMedia('(pointer: fine)').matches) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-// Intersection Observer for fade-in animations
-function initScrollAnimations() {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
+        const glow = document.createElement('div');
+        glow.className = 'cursor-glow';
+        document.body.appendChild(glow);
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
+        let mx = window.innerWidth / 2;
+        let my = window.innerHeight / 2;
+        let gx = mx, gy = my;
+
+        document.addEventListener('mousemove', (e) => {
+            mx = e.clientX;
+            my = e.clientY;
         });
-    }, observerOptions);
 
-    // Observe all sections and cards
-    document.querySelectorAll('section, .project-card, .skill-category').forEach(el => {
-        observer.observe(el);
+        const tick = () => {
+            gx += (mx - gx) * 0.12;
+            gy += (my - gy) * 0.12;
+            glow.style.left = gx + 'px';
+            glow.style.top  = gy + 'px';
+            requestAnimationFrame(tick);
+        };
+        tick();
+
+        document.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
+        document.addEventListener('mouseenter', () => { glow.style.opacity = '1'; });
+    }
+
+    /* ---------- Init ---------- */
+    document.addEventListener('DOMContentLoaded', () => {
+        initExperienceTabs();
+        initMobileMenu();
+        initSmoothScroll();
+        initNavScroll();
+        initCursorGlow();
     });
-}
-
-// Initialize all functionality when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    initExperienceTabs();
-    initMobileMenu();
-    initSmoothScroll();
-    initNavbarScroll();
-    initScrollAnimations();
-});
+})();
