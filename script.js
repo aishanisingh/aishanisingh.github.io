@@ -115,43 +115,11 @@
         onScroll();
     }
 
-    /* ---------- Cursor glow (desktop only) ---------- */
-    function initCursorGlow() {
-        if (!window.matchMedia('(pointer: fine)').matches) return;
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-        const glow = document.createElement('div');
-        glow.className = 'cursor-glow';
-        document.body.appendChild(glow);
-
-        let mx = window.innerWidth / 2;
-        let my = window.innerHeight / 2;
-        let gx = mx, gy = my;
-
-        document.addEventListener('mousemove', (e) => {
-            mx = e.clientX;
-            my = e.clientY;
-        });
-
-        const tick = () => {
-            gx += (mx - gx) * 0.12;
-            gy += (my - gy) * 0.12;
-            glow.style.left = gx + 'px';
-            glow.style.top  = gy + 'px';
-            requestAnimationFrame(tick);
-        };
-        tick();
-
-        document.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
-        document.addEventListener('mouseenter', () => { glow.style.opacity = '1'; });
-    }
-
     /* ---------- Init ---------- */
     document.addEventListener('DOMContentLoaded', () => {
         initExperienceTabs();
         initMobileMenu();
         initSmoothScroll();
         initNavScroll();
-        initCursorGlow();
     });
 })();
