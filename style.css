@@ -297,14 +297,12 @@ a:hover {
 
 .hero-tagline {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 400;
     font-style: italic;
     color: var(--text-muted);
-    line-height: 1.4;
-    margin-top: 20px;
+    line-height: 1.2;
     margin-bottom: 28px;
-    max-width: 720px;
 }
 
 .hero-description {
