@@ -341,10 +341,11 @@ a:hover {
     gap: 10px;
 }
 
-.btn-icon {
+svg.btn-icon {
     width: 18px;
     height: 18px;
     flex-shrink: 0;
+    display: inline-block;
     transform-origin: 50% 50%;
 }
 
@@ -732,7 +733,7 @@ a:hover {
     align-items: center;
     gap: 8px;
 }
-.paper-link .btn-icon { width: 14px; height: 14px; }
+.paper-link svg.btn-icon { width: 14px; height: 14px; }
 .paper-link:hover { background: var(--text-primary); color: var(--bg-primary); transform: translateY(-2px); }
 .paper-link.primary { background: var(--accent-lavender); color: white; border-color: var(--accent-lavender); }
 .paper-link.primary:hover { background: var(--text-primary); border-color: var(--text-primary); }
@@ -839,15 +840,17 @@ a:hover {
     padding-top: 8px;
 }
 .beyond-icon {
-    width: 40px;
-    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 14px;
     color: var(--accent-lavender);
     transform-origin: 50% 50%;
 }
 .beyond-icon svg {
-    width: 100%;
-    height: 100%;
+    width: 28px;
+    height: 28px;
+    display: block;
 }
 .beyond-card:hover .beyond-icon {
     animation: wiggle 0.6s ease-in-out;
@@ -944,6 +947,53 @@ a:hover {
     font-weight: 500;
     color: var(--text-muted);
     letter-spacing: 0.02em;
+}
+
+/* ========================================
+   Section Themes — distinct accent per section
+   ======================================== */
+
+/* About — lavender (default) */
+#about .section-number       { color: var(--accent-lavender); }
+#about .tech-list li::before { color: var(--accent-lavender); }
+#about .about-text .pull     { border-left-color: var(--accent-lavender); }
+#about a                     { color: var(--accent-lavender); }
+
+/* Experience — sage */
+#experience .section-number              { color: var(--accent-sage); }
+#experience .tab-btn.active::before      { background: var(--accent-sage); }
+#experience .experience-list li::before  { color: var(--accent-sage); }
+#experience .experience-company          { color: var(--accent-sage); }
+
+/* Research — sky */
+#research .section-number   { color: var(--accent-sky); }
+#research .paper-venue      { color: var(--accent-sky); }
+#research .work-arrow       { color: var(--accent-sky); }
+#research .paper-link.primary {
+    background: var(--accent-sky);
+    border-color: var(--accent-sky);
+    color: white;
+}
+#research .paper-link.primary:hover {
+    background: var(--text-primary);
+    border-color: var(--text-primary);
+}
+#research a                 { color: var(--accent-sky); }
+
+/* Beyond — peach */
+#misc .section-number       { color: var(--accent-peach); }
+#misc .beyond-icon          { color: var(--accent-peach); }
+#misc .beyond-card a        { color: var(--accent-peach); }
+
+/* Contact — rose */
+#contact .section-number    { color: var(--accent-rose); }
+#contact .btn-primary {
+    background: var(--accent-rose);
+    border-color: var(--accent-rose);
+}
+#contact .btn-primary:hover {
+    background: transparent;
+    color: var(--text-primary);
 }
 
 /* ========================================
