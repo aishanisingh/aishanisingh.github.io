@@ -9,16 +9,19 @@
     --text-primary: #4a4742;
     --text-secondary: #6f6c66;
     --text-muted: #9a948b;
-    --accent-lavender: #b8a9c9;
-    --accent-mint: #a8d5ba;
-    --accent-peach: #f5c6aa;
-    --accent-rose: #e8b4b8;
-    --accent-sky: #a8c5e2;
-    --accent-sage: #c5d4c0;
-    --peachy-highlight: #f8c8b5;
+    /* Cohesive warm earth-tone palette — terracotta, coral, mauve, sand */
+    --accent-lavender: #b89299;   /* warm dusty mauve (was purple) */
+    --accent-mint:     #b3a895;   /* warm taupe-sage (was greenish) */
+    --accent-peach:    #d8907a;   /* dusty coral */
+    --accent-rose:     #c89098;   /* dusty rose */
+    --accent-sky:      #ad8898;   /* dusty plum-mauve (was blue) */
+    --accent-sage:     #b8ad95;   /* warm sand-sage */
+    --peachy-highlight: #ecbfa6;
+    --accent-spark:    #b66848;   /* deeper terracotta — primary emphasis */
+    --accent-spark-soft: #c8856b;
     --border: rgba(74, 71, 66, 0.08);
     --nav-height: 70px;
-    --section-padding: 20px;
+    --section-padding: 70px;
 }
 
 * {
@@ -36,12 +39,12 @@ html {
 
 body {
     font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: linear-gradient(135deg, #fdf2f8 0%, #eff6ff 45%, #faf5ff 100%);
-    background-attachment: fixed;
+    background: #faf8f2;
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
 }
+
 
 a {
     color: var(--accent-lavender);
@@ -69,16 +72,16 @@ a:hover {
 .blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(110px);
-    opacity: 0.35;
-    animation: float 25s ease-in-out infinite;
+    filter: blur(120px);
+    opacity: 0.22;
+    animation: float 35s ease-in-out infinite;
     mix-blend-mode: multiply;
 }
 
 .blob-1 {
     width: 500px;
     height: 500px;
-    background: var(--accent-lavender);
+    background: var(--accent-peach);
     top: -15%;
     left: -10%;
 }
@@ -86,19 +89,19 @@ a:hover {
 .blob-2 {
     width: 450px;
     height: 450px;
-    background: var(--accent-mint);
+    background: var(--accent-rose);
     bottom: -10%;
     right: -5%;
-    animation-delay: -10s;
+    animation-delay: -12s;
 }
 
 .blob-3 {
     width: 350px;
     height: 350px;
-    background: var(--accent-peach);
+    background: var(--accent-lavender);
     top: 40%;
     left: 60%;
-    animation-delay: -5s;
+    animation-delay: -6s;
 }
 
 @keyframes float {
@@ -411,7 +414,8 @@ svg.btn-icon {
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--accent-lavender);
+    color: var(--accent-spark);
+    letter-spacing: 0.02em;
 }
 
 /* ========================================
@@ -759,15 +763,12 @@ svg.btn-icon {
     transition: padding 0.25s ease, background 0.25s ease, border-radius 0.25s ease;
     color: var(--text-primary);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 0;
 }
 .work-row:hover {
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    padding-left: 18px;
-    padding-right: 18px;
-    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.35);
+    padding-left: 14px;
+    padding-right: 14px;
 }
 .work-row:hover .work-title {
     font-style: italic;
@@ -837,7 +838,19 @@ svg.btn-icon {
     margin-top: 20px;
 }
 .beyond-card {
-    padding-top: 8px;
+    padding: 28px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    box-shadow: 0 6px 22px -10px rgba(74, 71, 66, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.beyond-card:hover {
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px -12px rgba(74, 71, 66, 0.15);
 }
 .beyond-icon {
     display: inline-flex;
@@ -947,53 +960,6 @@ svg.btn-icon {
     font-weight: 500;
     color: var(--text-muted);
     letter-spacing: 0.02em;
-}
-
-/* ========================================
-   Section Themes — distinct accent per section
-   ======================================== */
-
-/* About — lavender (default) */
-#about .section-number       { color: var(--accent-lavender); }
-#about .tech-list li::before { color: var(--accent-lavender); }
-#about .about-text .pull     { border-left-color: var(--accent-lavender); }
-#about a                     { color: var(--accent-lavender); }
-
-/* Experience — sage */
-#experience .section-number              { color: var(--accent-sage); }
-#experience .tab-btn.active::before      { background: var(--accent-sage); }
-#experience .experience-list li::before  { color: var(--accent-sage); }
-#experience .experience-company          { color: var(--accent-sage); }
-
-/* Research — sky */
-#research .section-number   { color: var(--accent-sky); }
-#research .paper-venue      { color: var(--accent-sky); }
-#research .work-arrow       { color: var(--accent-sky); }
-#research .paper-link.primary {
-    background: var(--accent-sky);
-    border-color: var(--accent-sky);
-    color: white;
-}
-#research .paper-link.primary:hover {
-    background: var(--text-primary);
-    border-color: var(--text-primary);
-}
-#research a                 { color: var(--accent-sky); }
-
-/* Beyond — peach */
-#misc .section-number       { color: var(--accent-peach); }
-#misc .beyond-icon          { color: var(--accent-peach); }
-#misc .beyond-card a        { color: var(--accent-peach); }
-
-/* Contact — rose */
-#contact .section-number    { color: var(--accent-rose); }
-#contact .btn-primary {
-    background: var(--accent-rose);
-    border-color: var(--accent-rose);
-}
-#contact .btn-primary:hover {
-    background: transparent;
-    color: var(--text-primary);
 }
 
 /* ========================================
