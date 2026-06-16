@@ -298,21 +298,6 @@ a:hover {
     letter-spacing: -0.02em;
 }
 
-.hero-flourish {
-    display: inline-block;
-    font-size: 0.5em;
-    color: var(--accent-lavender);
-    margin-left: 0.25em;
-    vertical-align: 0.55em;
-    letter-spacing: 0.1em;
-    animation: flourish-float 6s ease-in-out infinite;
-}
-
-@keyframes flourish-float {
-    0%, 100% { transform: translateY(0) rotate(0); }
-    50% { transform: translateY(-4px) rotate(8deg); }
-}
-
 .hero-tagline {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2rem, 6vw, 3.5rem);
